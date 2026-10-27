@@ -1,0 +1,21 @@
+feedback_id,ground_truth_theme,feedback_type,notes
+FB01,export_crash,bug,Export failure crash
+FB02,export_crash,bug,Export failure freeze
+FB03,export_crash,bug,Export failure program closes
+FB04,export_crash,bug,Export crash on OS
+FB05,login_auth_timeout,bug,Session logout and 2FA delay
+FB06,login_auth_timeout,bug,Session timeout and SMS delay
+FB07,login_auth_timeout,bug,Account login verification failure
+FB08,search_latency,performance,Search slowness over 30s
+FB09,search_latency,performance,Search sluggish on large lists
+FB10,dark_mode,feature_request,Dark theme requested
+FB11,dark_mode,feature_request,Dark theme low light
+FB12,cloud_import,feature_request,Google Drive bulk import
+FB13,slack_integration,feature_request,Slack webhook integration
+FB14,ui_onboarding,positive,Intuitive navigation and UI
+FB15,performance_praise,positive,Speed improvements and dashboard
+FB16,billing_issue,billing,Double subscription charge
+FB17,doc_broken_link,docs,404 on API endpoints docs
+FB18,export_crash,duplicate,Exact duplicate of FB01
+FB19,search_latency,duplicate,Exact duplicate of FB08
+FB20,dark_mode,feature_request,Terse dark mode request

@@ -1,0 +1,64 @@
+{
+  "system_metadata": {
+    "python_version": "3.12.10",
+    "os_system": "Windows",
+    "os_release": "11",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "sample_count": 20,
+    "unique_count": 18,
+    "duplicate_count": 2,
+    "tested_k_values": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "tested_seeds": [
+      42,
+      100,
+      2024
+    ],
+    "timestamp_utc": "2026-10-27T03:01:32Z"
+  },
+  "dataset": {
+    "path": "data/sample_feedback.csv",
+    "total_records": 20,
+    "unique_records": 18,
+    "duplicates": 2
+  },
+  "models": {
+    "method_a": {
+      "name": "TF-IDF + K-Means",
+      "vectorizer": "TfidfVectorizer(ngram_range=(1,2), max_features=1000, sublinear_tf=True)",
+      "clustering": "KMeans(init='k-means++', n_init=10)",
+      "distance": "Euclidean on L2-normalized sparse vectors (pairwise Euclidean distance monotonically reflects cosine distance; centroid convergence minimizes Euclidean distance without spherical re-normalization)"
+    },
+    "method_b": {
+      "name": "Sentence Transformers + K-Means",
+      "model_identifier": "sentence-transformers/all-MiniLM-L6-v2",
+      "embedding_dimension": 384,
+      "clustering": "KMeans(init='k-means++', n_init=10)",
+      "distance": "Euclidean on L2-normalized dense embeddings"
+    }
+  },
+  "aggregate_results": {
+    "tfidf_mean_ari": 0.2647319396255864,
+    "tfidf_std_ari": 0.17639272437788342,
+    "emb_mean_ari": 0.6148875118343655,
+    "emb_std_ari": 0.15340010824746958,
+    "tfidf_mean_pairwise_f1": 0.3743749999999999,
+    "tfidf_std_pairwise_f1": 0.14020788542861504,
+    "emb_mean_pairwise_f1": 0.6679833333333334,
+    "emb_std_pairwise_f1": 0.12754338180565952,
+    "tfidf_mean_runtime_sec": 0.06440833333333335,
+    "tfidf_std_runtime_sec": 0.03079546774012912,
+    "emb_cold_start_runtime_sec": 19.5734,
+    "emb_warmed_mean_runtime_sec": 0.06278181818181817,
+    "emb_warmed_std_runtime_sec": 0.0049995636173206515,
+    "emb_overall_mean_runtime_sec": 1.688666666666667,
+    "mean_partition_agreement_ari": 0.33385000000000004,
+    "std_partition_agreement_ari": 0.18612067688367237,
+    "mean_partition_agreement_nmi": 0.5866833333333333,
+    "std_partition_agreement_nmi": 0.21192246366551282
+  }
+}

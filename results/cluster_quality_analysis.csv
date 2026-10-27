@@ -1,0 +1,9 @@
+model,k,cluster_id,size,keywords,representative_id,representative_quote
+TF-IDF + K-Means,4,0,1,twice; subscription; month; billing; charged,FB16,Billing charged me twice this month for my subscription.
+TF-IDF + K-Means,4,1,6,pdf; export; time; report; crashes,FB01,The app crashes every time I try to export my report to PDF.
+TF-IDF + K-Means,4,2,11,dark; mode; codes; love; option,FB20,Dark mode please!
+TF-IDF + K-Means,4,3,2,takes; records; searching; seconds; customer,FB08,Searching through customer records takes over 30 seconds.
+Sentence Transformers (all-MiniLM-L6-v2) + K-Means,4,0,5,30; customer; records; searching; takes,FB19,Searching through customer records takes over 30 seconds.
+Sentence Transformers (all-MiniLM-L6-v2) + K-Means,4,1,5,15; 404; api; codes; minutes,FB05,"I am constantly logged out every five minutes, 2FA code never arrives in time."
+Sentence Transformers (all-MiniLM-L6-v2) + K-Means,4,2,5,app; crashes; export; pdf; report,FB01,The app crashes every time I try to export my report to PDF.
+Sentence Transformers (all-MiniLM-L6-v2) + K-Means,4,3,5,ability; amazing; background; dark; mode,FB11,Would love a dark theme option for working in low light environments.
